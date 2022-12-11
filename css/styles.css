@@ -1,0 +1,686 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F7FA;
+    color: #2E2F42;
+}
+ul { list-style: none;} /* Я розумію що в завданні було сказано про глобальні стилі, але це об'єктивно правильніше */
+a {text-decoration: none;} 
+/* abotu_header */
+.index-body {
+    position: relative;
+    width: 1440px;
+    height: 2593px;
+    background: #FFFFFF;
+}
+.header {
+    /* position: absolute; */
+    width: 1440px;
+    height: 72px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+    .header-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        position: absolute;
+        width: 115px;
+        height: 24px;
+        left: 156px;
+        top: 24px;
+    }
+    .logo-w {
+            width: 44px;
+            height: 24px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #4D5AE5;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }    
+    .logo-s {
+            width: 71px;
+            height: 24px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #2E2F42;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+    .header-nav {
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 40px;
+        position: absolute;
+        width: 261px;
+        height: 24px;
+        left: 348px;
+        top: 24px;
+    }
+        .header-nav-studio, .header-nav-portfolio, .header-nav-contacts {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: #2E2F42;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            height: 24px; 
+        } 
+        .header-nav-studio {
+            width: 48px;
+        }
+        .header-nav-portfolio {
+            width: 66px;
+        }
+        .header-nav-contacts {
+            width: 67px;
+        }
+        .header-nav-studio:hover, .header-nav-portfolio:hover, .header-nav-contacts:hover,
+        .header-nav-studio:focus, .header-nav-portfolio:focus, .header-nav-contacts:focus {
+            color: #4D5AE5;
+        }
+    .header-contacts-linc-tel {
+        position: absolute;
+        width: 151px;
+        height: 24px;
+        left: 1133px;
+        top: 24px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+    .header-contacts-linc-mail {
+        position: absolute;
+        width: 153px;
+        height: 24px;
+        left: 940px;
+        top: 24px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+    .header-contacts-linc-tel:hover, .header-contacts-linc-mail:hover,
+    .header-contacts-linc-tel:focus, .header-contacts-linc-mail:focus {
+        color: #4D5AE5;
+    }
+
+/* abotu_main */
+.main-section-tagline {
+    position: absolute;
+    width: 1440px;
+    height: 603px;
+    left: 0px;
+    top: 72px;
+    background: #2E2F42;
+}
+    .main-section-tagline-text {
+        margin-top: 192px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+    .main-section-tagline-button {
+        cursor: pointer;
+        margin: 48px 192px 635px 635px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 16px 32px;
+        gap: 10px;  
+        color: #FFFFFF;
+        background: #4D5AE5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+    .main-section-tagline-button:hover, .main-section-tagline-button:focus {
+        color: #2E2F42;
+        background: #4D5AE5;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 4px;
+    }
+    .main-section-tagline-button:active {
+        background: #404BBF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+/* abotu_section_skills */
+.main-skills {
+    margin: 795px 120px 156px 156px;
+}
+    .main-skills-strategy {
+        position: absolute;
+        width: 264px;
+        height: 104px;
+        left: 156px;
+        top: 795px;
+    }
+    .main-skills-punctuality {
+        position: absolute;
+        width: 264px;
+        height: 104px;
+        left: 444px;
+        top: 795px;
+    }
+    .main-skills-diligence {
+        position: absolute;
+        width: 264px;
+        height: 104px;
+        left: 732px;
+        top: 795px;
+    }
+    .main-skills-technologies {
+        position: absolute;
+        width: 264px;
+        height: 104px;
+        left: 1020px;
+        top: 795px;
+    }
+        .main-skills-h {
+            margin-bottom: 8px;
+            width: 264px;
+            height: 24px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: #2E2F42;
+            
+        }
+        .main-skills-p {
+            margin-top: 0px;
+            width: 264px;
+            height: 72px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: #434455;
+
+        }
+/* abotu_section_promo */
+.main-promo {
+    margin-bottom: 120px;
+    position: absolute;
+    width: 1128px;
+    height: 412px;
+    left: 156px;
+    top: 1019px;
+
+}
+    .main-promo-h {
+        margin-bottom: 0px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+    }
+    .main-promo-photo-one { 
+        position: absolute;
+        width: 360px;
+        height: 300px;
+        left: 0px;
+        top: 112px;
+    }
+    .main-promo-photo-two {
+        position: absolute;
+        width: 360px;
+        height: 300px;
+        left: 384px;
+        top: 112px;
+    }
+    .main-promo-photo-three {
+        position: absolute;
+        width: 360px;
+        height: 300px;
+        left: 768px;
+        top: 112px;
+
+    }
+ /* abotu_section_team */   
+ .main-team {
+    margin-top: 0px;
+    position: absolute;
+    width: 1440px;
+    height: 732px;
+    left: 0px;
+    top: 1551px;
+    background: #F4F4FD;
+ }
+    .main-team h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+    }
+    .main-team p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+    .main-team-h {
+        margin-top: 120px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+    }
+    .main-team-li-one {
+        position: absolute;
+        left: 156px;
+        top: 232px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+    }
+    .main-team-li-two {
+        position: absolute;
+        left: 444px;
+        top: 232px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+    }
+    .main-team-li-three {
+        position: absolute;
+        left: 732px;
+        top: 232px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+    }
+    .main-team-li-four {
+        position: absolute;
+        left: 1020px;
+        top: 232px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+    }
+/* abotu_footer */ 
+.footer {
+    position: absolute;
+    width: 1440px;
+    height: 310px;
+    left: 0px;
+    top: 2283px;
+    background: #2E2F42;
+}
+.header-logo-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 115px;
+    height: 22px;
+    left: 156px;
+    top: 100px;
+}
+    .logo-w-footer {
+        width: 44px;
+        height: 22px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4D5AE5;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .logo-s-footer {
+        width: 71px;
+        height: 22px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #F4F4FD;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+.footer p {
+    position: absolute;
+    width: 264px;
+    height: 72px;
+    left: 156px;
+    top: 138px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #E7E9FC;
+}
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/* PARTFOLIO */
+.portfolio-body {
+    position: relative;
+    width: 1440px;
+    height: 2074px;
+    background: #FFFFFF;
+}
+/* Гребані КНОПКИ */ 
+.filfers-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 586px;
+    height: 48px;
+    left: 427px;
+    top: 168px;
+}
+.filfers-button-all {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 69px;
+    height: 48px;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.filfers-button-wst {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 116px;
+    height: 48px;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.filfers-button-app {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 78px;
+    height: 48px;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.filfers-button-des {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 101px;
+    height: 48px;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+.filfers-button-mar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 126px;
+    height: 48px;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+    .filfers-button-text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        color: #4D5AE5;
+    }
+    .filfers-button-all:hover, .filfers-button-all:focus,
+    .filfers-button-wst:hover, .filfers-button-wst:focus,
+    .filfers-button-app:hover, .filfers-button-app:focus,
+    .filfers-button-des:hover, .filfers-button-des:focus,
+    .filfers-button-mar:hover, .filfers-button-mar:focus {
+        background: #4D5AE5;
+        color: #FFFFFF;
+    }
+    .filfers-button-all:hover span, .filfers-button-all:focus span,
+    .filfers-button-wst:hover span, .filfers-button-wst:focus span,
+    .filfers-button-app:hover span, .filfers-button-app:focus span,
+    .filfers-button-des:hover span, .filfers-button-des:focus span,
+    .filfers-button-mar:hover span, .filfers-button-mar:focus span {
+        color: #FFFFFF;
+    }
+    .filfers-button-all:active,
+    .filfers-button-wst:active,
+    .filfers-button-app:active,
+    .filfers-button-des:active,
+    .filfers-button-mar:active {
+        background: #4D5AE5;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        color: #FFFFFF;
+    }
+    .filfers-button-all:active span,
+    .filfers-button-wst:active span,
+    .filfers-button-app:active span,
+    .filfers-button-des:active span,
+    .filfers-button-mar:active span {
+        color: #222020;
+    }
+/* Projekts section */ 
+.projekts-section {
+    margin-top: 288px;
+    margin-left: 0px;
+    width: 1440px;
+    height: 1548px;
+}
+.projekts-section-bloc-a {
+    box-sizing: border-box;
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    margin: 0px 0px 48px 156px;
+    background: #FFFFFF;
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.projekts-section-bloc-b {
+    box-sizing: border-box;
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    margin: 0px 0px 48px 540px;
+    background: #FFFFFF;
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.projekts-section-bloc-c {
+    box-sizing: border-box;
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    margin: 0px 0px 48px 924px;
+    background: #FFFFFF;
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.projekts-section-bloc-d {
+    box-sizing: border-box;
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    margin: 540px 0px 48px 156px;
+    background: #FFFFFF;
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.projekts-section-bloc-e {
+    box-sizing: border-box;
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    margin: 540px 0px 48px 540px;
+    background: #FFFFFF;
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.projekts-section-bloc-f {
+    box-sizing: border-box;
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    margin: 540px 0px 48px 924px;
+    background: #FFFFFF;
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.projekts-section-bloc-g {
+    box-sizing: border-box;
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    margin: 1008px 0px 48px 156px;
+    background: #FFFFFF;
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.projekts-section-bloc-h {
+    box-sizing: border-box;
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    margin: 1008px 0px 48px 540px;
+    background: #FFFFFF;
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.projekts-section-bloc-i {
+    box-sizing: border-box;
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    margin: 1008px 0px 48px 924px;
+    background: #FFFFFF;
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.projekts-section h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.projekts-section-p-top, .projekts-section-p-top-v  {
+    position: absolute;
+    left: 32px;
+    top: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+}
+.projekts-section-p-top {
+        opacity: 0;
+}
+.projekts-section-p-under {
+    width: 30px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
